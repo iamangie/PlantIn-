@@ -1,0 +1,13 @@
+.main-nav {
+  padding: 1em 0 0 0.5em;
+
+  li::before {
+    content: url("../../assets/images/svg/backSign.svg");
+    vertical-align: middle;
+    margin-right: 0.5em;
+  }
+
+  @include respond(big-desktop) {
+    padding: 24px 0 0;
+  }
+}

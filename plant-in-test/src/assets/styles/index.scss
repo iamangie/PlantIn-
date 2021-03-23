@@ -1,0 +1,19 @@
+@import "variables";
+@import "fonts";
+@import "typography";
+@import "shared/mixins/media_mixin";
+@import "general";
+
+//components
+
+@import "../../components/shared/Footer/Footer.scss";
+@import "../../components/shared/Header/Header.scss";
+@import "../../components/shared/Header/Burger/Burger.scss";
+@import "../../components/shared/Header/NavMenu/NavMenu.scss";
+@import "../../components/shared/Header/NavButtons/NavButtons.scss";
+@import "../../components/shared/Footer/Footer.scss";
+@import "../../components/MainNav/MainNav.scss";
+@import "../../components/SearchBlock//SearchBlock.scss";
+@import "../../components/Article/Article.scss";
+@import "../../components/Main/Main.scss";
+@import "../../components/AdBlock//AdBlock.scss";

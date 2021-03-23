@@ -1,0 +1,57 @@
+.footer {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  padding: 1rem;
+  margin-top: 96px;
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    @include respond(tab-land) {
+      width: 55%;
+      flex-direction: row;
+    }
+
+    @include respond(big-desktop) {
+      width: 50%;
+      flex-direction: row;
+      margin-bottom: 0;
+    }
+
+    li {
+      @include respond(tab-land) {
+        border-right: 1px solid $secondary-grey-2;
+        padding-right: 24px;
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include respond(tab-land) {
+      width: 40%;
+      justify-content: space-between;
+    }
+
+    @include respond(big-desktop) {
+      width: 33%;
+    }
+  }
+
+  @include respond(tab-land) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

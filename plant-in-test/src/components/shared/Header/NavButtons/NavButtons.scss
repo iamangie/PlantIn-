@@ -1,0 +1,149 @@
+.nav-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+
+  @include respond(tab-land) {
+    width: 15%;
+  }
+
+  @include respond(big-desktop) {
+    width: 10%;
+  }
+}
+
+.search-btn-container {
+  position: relative;
+  width: 200px;
+  height: 60px;
+  margin: 10px;
+
+  input {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    bottom: 0;
+    margin: auto;
+    width: 150px;
+    height: 35px;
+    background: $secondary-grey-3;
+    font-weight: bolder;
+    color: #fff;
+    text-shadow: 0 0 10px $secondary-grey;
+    border-radius: 30px;
+    opacity: 0;
+    letter-spacing: 0.1em;
+    padding: 0 20px 0 20px;
+    outline: none;
+    border: none;
+    transition: all 1s;
+    z-index: 5;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:focus {
+      width: 150px;
+      opacity: 1;
+      cursor: text;
+    }
+
+    //close-btn
+    &:focus ~ .search {
+      right: -40px;
+      z-index: 6;
+
+      @include respond(tab-port) {
+        right: -155px;
+      }
+
+      @include respond(tab-land) {
+        right: -70px;
+      }
+
+      @include respond(big-desktop) {
+        right: -65px;
+      }
+
+      &::before {
+        top: 0;
+        left: 0;
+        width: 14px;
+      }
+
+      &::after {
+        top: 3px;
+        left: 0;
+        width: 14px;
+        height: 2px;
+        border: none;
+        background: $secondary-grey-3;
+        border-radius: 0%;
+        transform: rotate(-45deg) translateX(4px) translateY(-3px);
+      }
+    }
+
+    &::placeholder {
+      color: #fff;
+      opacity: 0.6;
+    }
+  }
+
+  .search {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border-radius: 50%;
+    transition: all 1s;
+    z-index: 4;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    //search-btn
+    &::before {
+      content: "";
+      position: absolute;
+      margin: auto;
+      top: 22px;
+      right: 0;
+      bottom: 6px;
+      left: 17px;
+      width: 10px;
+      height: 2px;
+      background: $secondary-grey-3;
+      transform: rotate(45deg);
+      transition: all 0.5s;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      margin: auto;
+      top: -5px;
+      right: 0;
+      bottom: 0;
+      left: -5px;
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      border: 2px solid $secondary-grey-3;
+      transition: all 0.5s;
+    }
+  }
+}
+
+.account-btn {
+  display: none;
+  @include respond(tab-land) {
+    display: block;
+  }
+}

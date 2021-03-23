@@ -1,0 +1,57 @@
+@import "variables";
+
+h1,
+h2,
+h3 {
+  font-family: $bold;
+  color: $primary-black;
+}
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.5;
+}
+
+.text {
+  font-family: $regular;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $primary-grey;
+}
+
+.text-secondary {
+  font-family: $regular;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $secondary-grey-2;
+}
+
+.title-green {
+  font-family: $extra-bold;
+  font-size: 32px;
+  color: $primary-green;
+}
+
+@media all and (max-width: 768px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 24px;
+  }
+
+  .title-green {
+    font-size: 24px;
+  }
+}

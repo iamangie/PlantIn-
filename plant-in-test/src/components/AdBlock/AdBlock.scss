@@ -1,0 +1,57 @@
+.ad-block {
+  background: $secondary-green;
+  border-radius: 16px;
+  margin: 24px 0;
+
+  &__container {
+    padding: 16px;
+
+    @include respond(tab-land) {
+      width: 60%;
+    }
+
+    @include respond(big-desktop) {
+      width: 100%;
+    }
+  }
+
+  .title-green {
+    margin: 16px 0;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+  }
+
+  &__btn {
+    background-color: $primary-green;
+    min-width: 311px;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 16px;
+
+    @include respond(tab-land) {
+      min-width: 156px;
+    }
+  }
+
+  @include respond(tab-port) {
+    text-align: center;
+  }
+
+  @include respond(tab-land) {
+    text-align: initial;
+    background-image: url("../../assets//images/svg/adBlock02.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+  }
+
+  @include respond(big-desktop) {
+    margin: 0 0 4em;
+  }
+}

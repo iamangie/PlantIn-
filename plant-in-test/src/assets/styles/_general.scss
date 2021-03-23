@@ -1,0 +1,55 @@
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: auto;
+}
+
+body {
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  font-family: $regular;
+  font-size: 14px;
+  line-height: 1.5;
+  color: $primary-black;
+  background-color: $primary-bg;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+button,
+input {
+  outline: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1194px;
+  width: 91.5%;
+  margin: 0 auto;
+}

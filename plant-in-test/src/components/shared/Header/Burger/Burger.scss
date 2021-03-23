@@ -1,0 +1,47 @@
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 18px;
+  height: 12px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  z-index: 10;
+  cursor: pointer;
+
+  span {
+    align-self: flex-end;
+    position: relative;
+    height: 2px;
+    width: 12px;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    transform-origin: 1px;
+    background-color: $secondary-grey-3;
+
+    &:nth-child(2) {
+      width: 18px;
+    }
+  }
+
+  &_open {
+    span {
+      &:first-child {
+        transform: rotate(45deg) translateX(1px);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg) translateX(0px);
+      }
+    }
+  }
+
+  @include respond(tab-land) {
+    display: none;
+  }
+}

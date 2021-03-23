@@ -1,0 +1,41 @@
+// small tablets & large smartphones (landscape view)
+$sm-screen: 576px;
+
+// small tablets (portrait view)
+$md-screen: 768px;
+
+// tablets & small desktops
+$lg-screen: 992px;
+
+// large tablets & desktops
+$xl-screen: 1200px;
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (min-width: #{$sm-screen}) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (min-width: #{$md-screen}) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (min-width: #{$lg-screen}) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: #{$xl-screen}) {
+      @content;
+    }
+  }
+}
+
+// for any custom device width
+@mixin custom($screen) {
+  @media (min-width: $screen+"px") {
+    @content;
+  }
+}

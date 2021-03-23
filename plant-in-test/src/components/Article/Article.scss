@@ -1,0 +1,82 @@
+.article {
+  margin-bottom: 23px;
+
+  @include respond(big-desktop) {
+    margin-bottom: 4em;
+  }
+
+  &_featured {
+    @include respond(tab-land) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .article__block {
+      @include respond(tab-land) {
+        width: 48%;
+      }
+    }
+
+    .article__title {
+      @include respond(big-desktop) {
+        font-size: 48px;
+        width: 70%;
+      }
+    }
+  }
+
+  &__new-badge {
+    margin: 16px 0;
+  }
+
+  &__lable {
+    font-family: Poppins-Bold;
+    color: $secondary-grey-2;
+    padding: 8px 0 16px;
+    border-top: 1px solid #c4c4c4;
+
+    @include respond(tab-land) {
+      padding: 16px 0;
+    }
+  }
+
+  &__time-info {
+    margin: 16px 0 8px;
+    .text {
+      color: $secondary-grey;
+    }
+  }
+
+  &__title {
+    @include respond(tab-land) {
+      font-size: 24px;
+    }
+  }
+
+  &__text {
+    margin-top: 8px;
+  }
+}
+
+.article-section {
+  @include respond(tab-port) {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+  }
+
+  @include respond(tab-land) {
+    gap: 2.5em;
+  }
+
+  &_interesting {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 0;
+    .article {
+      @include respond(tab-land) {
+        width: 31.31%;
+      }
+    }
+  }
+}
