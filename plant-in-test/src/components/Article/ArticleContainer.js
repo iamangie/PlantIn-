@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useWindowSize } from "../../hooks/useWindowResize";
 import { articlesData } from "../../data/articlesData";
 import Article from "./Article";
-import AdBlock from "../AdBlock/AdBlock";
+import InfoBlock from "../InfoBlock/InfoBlock";
 
 import { ReactComponent as NewBadge } from "../../assets/images/svg/newBadge.svg";
 
@@ -65,7 +65,7 @@ const ArticleContainer = () => {
         <section className="article-section article-section_interesting">
           {interestingArticleFirst}
         </section>
-        <AdBlock />
+        <InfoBlock />
         <section className="article-section article-section_interesting">
           {interestingArticleSecond}
         </section>
@@ -102,7 +102,7 @@ const ArticleContainer = () => {
         <section className="article-section">{topArticle}</section>
         <p className="article__lable"> INTERESTING </p>
         <section className="article-section">{interestingArticleFirst}</section>
-        <AdBlock />
+        <InfoBlock />
         <section className="article-section">
           {interestingArticleSecond}
         </section>

@@ -1,4 +1,4 @@
-.ad-block {
+.info-block {
   background: $secondary-green;
   border-radius: 16px;
   margin: 24px 0;
@@ -8,6 +8,7 @@
 
     @include respond(tab-land) {
       width: 60%;
+      padding: 4rem;
     }
 
     @include respond(big-desktop) {
