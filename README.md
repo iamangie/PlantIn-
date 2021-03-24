@@ -4,8 +4,6 @@ PlantIn is ReactJs SPA which implements layout with mobile-first approach, SCSS 
 ### Preview
 ![](plant-in-test/src/assets/images/preview/1.png)
 ![](plant-in-test/src/assets/images/preview/2.png)
-![](plant-in-test/src/assets/images/preview/3.png)
-![](plant-in-test/src/assets/images/preview/4.png)
 ![](plant-in-test/src/assets/images/preview/5.png)
 ![](plant-in-test/src/assets/images/preview/6.png)
 ![](plant-in-test/src/assets/images/preview/7.png)
