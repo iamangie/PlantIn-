@@ -1,6 +1,10 @@
 # PlantIn 
 PlantIn is ReactJs SPA which implements layout with mobile-first approach, SCSS styles & BEM methodology.
 
+### Preview
+![](plant-in-test/src/assets/images/preview/1.png)
+
+
 ## How To Use
 
 * Clone or download this repo to your desktop
